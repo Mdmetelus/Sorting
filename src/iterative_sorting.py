@@ -24,8 +24,17 @@ print(selection_sort([78, 248, 61, 233, 11, 212, 142, 91, 197, 203, 192, 111, 23
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
+    for passnum in range(len(arr)-1,0,-1):
+        for i in range(passnum):
+            if arr[i] > alist[i + 1]:
+                temp = arr[i]
+                arr[i] = arr[i+ 1]
+                arr[i + 1] = temp
 
     return arr
+
+print(bubble_sort([54,26,93,17,77,31,44,55,20]))
+print(bubble_sort([78, 248, 61, 233, 11, 212, 142, 91, 197, 203, 192, 111, 234, 66, 178, 38, 73, 188, 211, 114]))
 
 
 # STRETCH: implement the Count Sort function below
